@@ -1,0 +1,78 @@
+.blocks{
+  width: 100%;
+  column-count: 5;
+  column-gap: 10px;
+}
+.zone {
+  width: 100%;
+  height: 100%;
+  min-width: 160px;
+  min-height: 60px;
+  padding: 5px 0px;
+  border-radius: 5px;
+  background-color: #ffffff11;
+}
+.block {
+  min-width: 160px;
+  height: auto;
+  padding: 2px;
+}
+.card{
+  min-width: 160px;
+  max-width: 240px;
+  height:auto;
+  background: var(--bg2);
+  margin: 5px 0px;
+  padding: 5px 0px;
+  border-radius:10px;
+  text-align:center;
+  break-inside: avoid;
+  box-shadow: 0px 0px 10px 1px #00000011;
+  cursor: move;
+  transition: .4s;
+}
+.card:hover {
+  box-shadow: 0px 0px 15px var(--shadow);
+  background-color: #ffffff11;
+}
+.card label, .card h3, .card h2{
+  font-weight:bold;
+  background-image: linear-gradient(to right, purple, #FD951F);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card label {
+  font-size: 18px;
+}
+
+.card input, .card select{
+  width: 80%;
+  height:40px;
+  border-radius:8px;
+  padding:4px;
+  color:var(--fg);
+  margin-top:4px;
+  font-size:18px;
+}
+.card input {
+  width: 30%;
+  min-width: 50px;
+  text-align: center;
+  color: #333;
+}
+
+.highlight {
+  background-color: var(--shadow);
+  opacity: .3;
+}
+
+.is-dragging {
+  background-color: purple;
+  cursor: move;
+}
+
+.over {
+  background-color: #ffffff55;
+}

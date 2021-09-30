@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Generator css</title>
+  <meta name="theme-color" content="#7159c1">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/input.css">
+	<link rel="stylesheet" href="css/code.css">
+</head>
+<body>
+  <div class="container">
+		<header>
+			<h1>Animation Generator (CSS)</h1>
+		</header>
+		<main>
+			<section class="blocks">
+				<div class="block">
+					<div class="zone">
+						<div class="card" draggable="true">
+							<h3>Animação</h3>
+							<select id="animation">
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="zone">
+						<div class="card" draggable="true">
+							<h3>Mais</h3>
+							<select id="iteration">
+								<option value="1" selected>Finita</option>
+								<option value="infinite">Infinita</option>
+							</select>
+			
+							<select id="direction">
+								<option value="normal" selected>Uma direção</option>
+								<option value="alternate">Alternada</option>
+								<option value="reverse">
+									Inversa
+								</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<button class='arrow'>&lt;</button>
+			</section>
+			<section class="an">
+				<div id="obj" class="blank" onclick="show()">
+						.block
+				</div>
+			</section>
+			<div class="actions">
+				<button onclick="generate()" id="generate"> Generate </button>
+				<button onclick="animateBlock()"> Animate </button>
+				<button onclick="reset()"> Reset </button>
+			</div>
+		</main>
+	</div>
+	<div id="code" class="css">
+	  <button class="close" onclick="hidde()">+</button>
+	  <div class="div">
+	  	<div class="content"></div>
+	  </div>
+	</div>
+  <!-- Project -->
+  <script src="js/main.js" type="module"></script>
+  </script>
+</body>
+</html>
